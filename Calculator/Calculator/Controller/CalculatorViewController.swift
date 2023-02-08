@@ -74,6 +74,6 @@ final class CalculateViewController: UIViewController {
     @IBAction private func didTapChangedSignPad(_ sender: UIButton) {
         guard let enteringNumberText = enteringNumberLabel.text,
               calculatorChecker?.isZero(enteringNumberText) == false else { return }
-        calculatorChecker?.changeSign()
+        calculatorChecker
     }
 }
